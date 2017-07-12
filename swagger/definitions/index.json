@@ -1,0 +1,8 @@
+{
+  "Health": {
+    "$ref": "./responses/Health.json"
+  },
+  "Error": {
+    "$ref": "./responses/Error.json"
+  }
+}

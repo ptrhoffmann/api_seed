@@ -1,0 +1,35 @@
+{
+  "name": "api-seed",
+  "version": "1.0.0",
+  "description": "API-Seed for Quazer",
+  "main": "src/server.js",
+  "scripts": {
+    "test:unit": "mocha --recursive test/unit/",
+    "test:ci": "mocha --recursive test/integration/",
+    "build": "npm-run-all build:js build:swagger",
+    "build:js": "eslint src/**",
+    "build:swagger": "swagger bundle swagger/config.json -r -o swagger.json",
+    "dev": "npm-run-all --parallel watch:*",
+    "watch:js": "nodemon --watch src --exec \"npm run --silent build:js\"",
+    "watch:swagger": "nodemon --watch swagger --exec \"npm run --silent build:swagger\"",
+    "watch:start": "nodemon --watch src --watch swagger.json --watch server.js server.js"
+  },
+  "author": "peter.hoffmann@magicinternet.de",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.9.1",
+    "npm-run-all": "^1.7.0",
+    "sinon": "^1.17.3",
+    "supertest": "^1.2.0",
+    "swagger-cli": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-fluent-logger": "^0.2.3",
+    "swagger-tools": "^0.10.1"
+  }
+}

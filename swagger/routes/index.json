@@ -1,0 +1,5 @@
+{
+  "/monitor/health": {
+    "$ref": "./monitor/health.json"
+  }
+}

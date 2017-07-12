@@ -1,0 +1,28 @@
+{
+  "get": {
+    "summary": "Health Check",
+    "description": "Health Check for Api Seed",
+    "x-swagger-router-controller": "Monitor",
+    "tags": [
+      "Monitor"
+    ],
+    "operationId": "checkHealth",
+    "consumes": [
+      "application/json"
+    ],
+    "responses": {
+      "200": {
+        "description": "Service health response",
+        "schema": {
+          "$ref": "../../definitions/index.json#/Health"
+        }
+      },
+      "default": {
+        "description": "Unexpected error",
+        "schema": {
+          "$ref": "../../definitions/index.json#/Error"
+        }
+      }
+    }
+  }
+}

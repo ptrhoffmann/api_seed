@@ -1,0 +1,5 @@
+node_modules
+swagger.json
+*.log
+.idea
+.DS_Store

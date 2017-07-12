@@ -1,0 +1,18 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "__DEV__": true,
+        "__SERVER__": true
+    },
+    "rules": {
+        // Strict mode
+        "strict": [2, "global"],
+        // Code style
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "quotes": [2, "single"],
+        "no-underscore-dangle": 0
+    }
+}
