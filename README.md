@@ -57,7 +57,7 @@ The build task will run linting and resolve the swagger-json config files.
 - Consul: not yet configured (old content portfolio service listening on port 83)
 
 ## Environment Variables ##
-
+- AWS_ENV (in frontend set to ci or rancher)
 - PORT (default 3030)
 - FLUENT_HOST (defaults to 172.17.0.1)
 - NODE_ENV (production or development)
