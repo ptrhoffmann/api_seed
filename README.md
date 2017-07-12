@@ -1,12 +1,12 @@
-# Quazer API-SEED #
+# REST-API-SEED #
 
 ## Setup ##
 
 Clone this repository with an appropriate project name and switch remote repositories:
 ```
-> git clone git@gitlab.magic-technik.de:peppr/api-seed.git your_api_name
+> git clone git@github.com:ptrhoffmann/api_seed.git your_api_name
 > cd your_api_name
-> git remote set-url origin git@gitlab.magic-technik.de:peppr/your_api_name.git
+> git remote set-url origin git@github.com:ptrhoffmann/api_seed.git
 ```
 
 Now you have to create a repository named "your_api_name" via web or commandline interface(https://coderwall.com/p/r7yh6g/create-a-new-gitlab-repo-from-the-command-line) and push the branch.
@@ -58,12 +58,9 @@ The build task will run linting and resolve the swagger-json config files.
 
 ## Environment Variables ##
 
-- AWS_ENV (in frontend set to ci or rancher)
 - PORT (default 3030)
 - FLUENT_HOST (defaults to 172.17.0.1)
 - NODE_ENV (production or development)
-- BUILD_COMMIT (gitlab TAG env defaults to undefined)
-- BUILD_ID (gitlab CI_BUILD_ID env defaults to undefined)
 
 ## Known Issues ##
 
