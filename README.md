@@ -1,20 +1,6 @@
 # REST-API-SEED #
 
-## Setup ##
-
-Clone this repository with an appropriate project name and switch remote repositories:
-```
-> git clone git@github.com:ptrhoffmann/api_seed.git your_api_name
-> cd your_api_name
-> git remote set-url origin git@github.com:ptrhoffmann/api_seed.git
-```
-
-Now you have to create a repository named "your_api_name" via web or commandline interface(https://coderwall.com/p/r7yh6g/create-a-new-gitlab-repo-from-the-command-line) and push the branch.
-```
-> git push origin master
-```
-
-### Installation and Building ###
+## Installation and Building ##
 
 Switch to working directory and run:
 ```
@@ -24,7 +10,7 @@ Switch to working directory and run:
 
 The build task will run linting and resolve the swagger-json config files.
 
-### Running ###
+## Running ##
 1. Start server in dev environment (with file-change watcher and rebuild):
 ```
 > npm run dev
@@ -48,11 +34,11 @@ The build task will run linting and resolve the swagger-json config files.
 > npm run test:unit -- --reporter dot
 ```
 
-### Local Endpoints ###
+## Local Endpoints ##
 - DOC-UI: http://localhost:3030/docs/
 - API: http://localhost:3030/ (all available endpoints from doc)
 
-### Ports ###
+## Ports ##
 - Docker(localhost): 3030
 - Consul: not yet configured (old content portfolio service listening on port 83)
 
